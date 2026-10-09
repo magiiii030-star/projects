@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>  </title>
+    </head>
+    <body>
+        <button id="mybutton"> click me </button>
+
+        <script>
+            // var mybutton=document.getElementById("mybutton")
+            // mybutton.onclick=function(){
+                //  alert("submited")
+            //  }
+
+
+            // mybutton.ondblclick=function(){
+            //    alert('completed')
+            // }
+
+
+
+          var mybutton = document.getElementById("mybutton").style.backgroundColor="red";
+           var mybutton = document.getElementById("mybutton").style.borderRadius="10px";
+            var mybutton = document.getElementById("mybutton").style.fontSize="20px";
+          var mybutton = document.getElementById("mybutton").style.fontWeight="lightblue";
+            var mybutton = document.getElementById("mybutton").style.color="blue";
+            var mybutton = document.getElementById("mybutton").style.border="4px solid green";
+
+
+            // var mybutton = document.getElementById("mybutton")
+            // mybutton.onmouseover=function(){
+                // alert('finish')
+            // }
+
+            //   mybutton.onmouseout=function(){
+                // alert("completed")
+            //   }
+
+                var mybutton =document.getElementById("mybutton");
+
+                mybutton.onkeydown=function(){
+                    mybutton.style.backgroundColor="red"
+                    mybutton.style.transition=" all 5s ease-in-out";
+                    alert("key pressed")
+
+                }
+
+                mybutton.onkeyup=function(){
+                    mybutton.style.backgroundColor="blue";
+                    mybutton.style.transition="all 5s ease-in-out";
+                    alert("key pressed")
+                }
+
+                mybutton.onkeypress=function(){
+                    mybutton.style.backgroundColor="green";
+                    mybutton.style.transition="all 5s ease-in-out";
+                    alert("key pressed")
+                }
+
+
+
+
+</script>
+
+
+    </body>
+</html>

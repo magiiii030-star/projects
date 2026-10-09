@@ -1,0 +1,89 @@
+<html>
+    <head> 
+        <title> flex properties </title>
+    </head>
+    <style>
+        .parent{
+            width: 800px;
+            height: 600px;
+            border: 2px solid;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            flex-flow: column wrap;
+            justify-content: space-around;
+        }
+        #x{
+            height: 100px;
+            width: 100px;
+
+        }
+        .ch1{
+            background-color: red;
+            order: 5;
+            align-self: flex-end;
+
+        }
+        .ch2{
+            background-color: green;
+            order: 3;
+            flex-shrink: numbers 1;
+        }
+        .ch3{
+            background-color: brown;
+            order: 4;
+            flex-basis: 200px;
+        }
+        .ch4{
+            background-color: aqua;
+            order: 1;
+            flex-grow: numbers 2;
+        }
+        .ch5{
+            background-color: blue;
+            order: 2;
+            align-self: center;
+        }
+    </style>
+    <body>
+        <div class ="parent">
+            <div class="ch1" id="x"> child 1</div>
+            <div class="ch2" id="x"> child 2</div>
+            <div class="ch3" id="x"> child 3</div>
+            <div class="ch4" id="x"> child 4</div>
+            <div class="ch5" id="x"> child 5</div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

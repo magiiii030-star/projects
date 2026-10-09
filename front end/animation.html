@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>3danimation</title>
+        <link rel="styleshet" href="animation.css">
+        <style>
+            .box1{
+    width:30px ;
+    height:40px ;
+    background-color: blue;
+    animation-name: king;
+    animation-duration: 3s;
+    animation-timing-function:ease-in-out ;
+    animation-delay:1s ;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite ;
+    
+}
+ @keyframes king{
+
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(100px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+}
+.box2{
+    width:30px ;
+    height:40px ;
+    background-color: rgb(84, 185, 192);
+    animation-name: itachi;
+    animation-duration: 10s;
+    animation-timing-function:ease;
+    animation-delay:10s ;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite ;
+    
+}
+
+@keyframes itachi{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.box3{
+     width:50px ;
+    height:80px;
+    background-color: red;
+    animation-name: obito;
+    animation-duration: 10s;
+    animation-timing-function:ease;
+    animation-delay:1s ;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite ;
+    
+
+}
+    
+@keyframes  obito{
+    from{
+        transform:skew(0deg) ;
+    }
+    to{
+        transform: skew(360deg);
+    }
+}
+
+        </style>
+    </head>
+    <body>
+
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3 </div>
+
+    </body>
+</html>

@@ -1,0 +1,210 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Login</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body {
+    min-height: 100vh;
+    background: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .container {
+    background: white;
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    min-height: 520px;
+  }
+
+  /* Left Side */
+  .left {
+    width: 45%;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
+  .left h1 span {
+    font-weight: 300;
+    display: block;
+  }
+  .left .icon {
+    font-size: 60px;
+    margin: 20px 0;
+  }
+  .left p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+
+  /* Right Side */
+  .right {
+    width: 55%;
+    padding: 40px;
+  }
+  .right h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+  }
+  .right .subtitle {
+    font-size: 13px;
+    color: #888;
+    margin: 5px 0 25px 0;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+  }
+  .input-group input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+  }
+  .btn {
+    width: 100%;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  .btn:hover { background: #4338ca; }
+
+  .login-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #666;
+  }
+  .login-link a {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* Social Login like in board (Apple/Google) */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: #aaa;
+    font-size: 12px;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e5e7eb;
+  }
+  .social {
+    display: flex;
+    gap: 10px;
+  }
+  .social button {
+    flex: 1;
+    padding: 10px;
+    border: 1.5px solid #e5e7eb;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 700px) {
+    .container { flex-direction: column; }
+    .left, .right { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left Welcome -->
+  <div class="left">
+    <h1>Welcome <span>Our Website</span></h1>
+    <div class="icon">💻</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Create your account and join us!</p>
+  </div>
+
+  <!-- Right Form -->
+  <div class="right">
+    <h2>Login here!</h2>
+    <p class="subtitle">Sign Up to continue</p>
+
+    <form>
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+      </div>
+      <div class="input-group">
+        <label>Re-Password</label>
+        <input type="password" placeholder="Confirm password" required>
+      </div>
+
+      <button type="submit" class="btn">Sign Up</button>
+
+      <div class="login-link">
+        If you have already? <a href="#">Login</a>
+      </div>
+
+      <div class="divider">or</div>
+
+      <div class="social">
+        <button type="button">G Google</button>
+        <button type="button"> Apple</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

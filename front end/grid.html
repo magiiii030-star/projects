@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> grid </title>
+        <style>
+            .item1{grid-area:header;}
+            .item2{ grid-area:menu ;}
+            .item3{grid-area:main ;}
+            .item4{grid-area:right ;}
+            .item5{ grid-area:footer ;}
+            .item6{grid-area: footer;}
+
+
+            .grid-continer{
+                display: grid;
+                grid-template-areas:
+                   "header header header"
+                   "menu main menu"
+                   "footer main footer"
+                   ;
+                background-color: red;
+                padding: 30px;
+                font-size: 20px;
+                
+ 
+            }
+            .grid-continer>div{
+                background-color:white;
+                text-align: center;
+                padding: 30px;
+                color: pink;
+                font-size: 20px;
+            }
+
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class=" grid-continer">
+        <div class="item1"> header </div>
+        <div class="item2"> menu</div>
+        <div class="item3"> main</div>
+        <div class="item4"> right</div>
+        <div class="item5"> footer</div>
+        <div class="item6"> footer</div>
+    </div>
+    
+    </body>
+</html>
